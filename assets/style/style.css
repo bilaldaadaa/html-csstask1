@@ -465,10 +465,7 @@ transform: rotate(30deg);
     justify-content: center;
     gap: 20px;
 }
-.resources {
-    margin-left: 171px;
-    position: relative; 
-}
+
 .resources {
     margin-left: 171px;
     position: relative; 
@@ -482,8 +479,7 @@ transform: rotate(30deg);
     color: white;
     font-weight: 600;
     font-size: 20px;
-    font-family: "Nunito Sans",
-    sans-serif;
+    font-family: "Nunito Sans",sans-serif;
     line-height: 25.6px;
     writing-mode: vertical-lr;
     text-orientation: upright;
@@ -537,6 +533,20 @@ font-size:24px ;
     cursor: pointer;
 }
 
+
+.resources .container .faqs{
+transform: translateY(220px);
+}
+.half-ring {
+    width: 600px;
+    height: 300px;
+    border: 120px solid #5ef0a3; 
+    border-bottom: none; 
+    border-radius: 300px 300px 0 0; 
+    box-sizing: border-box;
+    rotate: 180deg;
+   /*  position: absolute; */
+}
 
 
 
