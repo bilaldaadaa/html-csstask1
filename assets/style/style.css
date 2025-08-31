@@ -103,17 +103,14 @@ main {
   width: 594px;
   height: 550px;
   border-radius: 12px;
-  background: radial-gradient(rgba(0, 0, 0, 0.35) 2px, transparent 1.6px) 0 0 /22px
-      22px,
+  background: radial-gradient(rgba(0, 0, 0, 0.35) 2px, transparent 1.6px) 0 0 /22px 22px,
     radial-gradient(rgba(0, 0, 0, 0.25) 2px, transparent 1.6px) 10px 6px /18px 18px,
-    radial-gradient(rgba(0, 0, 0, 0.2) 2px, transparent 1.6px) 3px 13px/26px
-      26px,
+    radial-gradient(rgba(0, 0, 0, 0.2) 2px, transparent 1.6px) 3px 13px/26px 26px,
     radial-gradient(rgba(0, 0, 0, 0.17) 1px, transparent 1.6px) 14px 9px /30px 30px,
-    radial-gradient(rgba(0, 0, 0, 0.12) 1px, transparent 1.6px) 5px 17px/34px
-      34px,
-    radial-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1.6 px) 7px 3px /40px 40px,
+    radial-gradient(rgba(0, 0, 0, 0.12) 1px, transparent 1.6px) 5px 17px/34px 34px,
+    radial-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1.6px) 7px 3px /40px 40px,
     transparent;
-  overflow: hidden;
+
 }
 
 .paper.second {
@@ -123,14 +120,11 @@ main {
   width: 1294px;
   height: 900px;
   border-radius: 12px;
-  background: radial-gradient(rgba(0, 0, 0, 0.35) 2px, transparent 1.6px) 0 0 /22px
-      22px,
+  background: radial-gradient(rgba(0, 0, 0, 0.35) 2px, transparent 1.6px) 0 0 /22px 22px,
     radial-gradient(rgba(0, 0, 0, 0.25) 2px, transparent 1.6px) 10px 6px /18px 18px,
-    radial-gradient(rgba(0, 0, 0, 0.2) 2px, transparent 1.6px) 3px 13px/26px
-      26px,
+    radial-gradient(rgba(0, 0, 0, 0.2) 2px, transparent 1.6px) 3px 13px/26px 26px,
     radial-gradient(rgba(0, 0, 0, 0.17) 1px, transparent 1.6px) 14px 9px /30px 30px,
-    radial-gradient(rgba(0, 0, 0, 0.12) 1px, transparent 1.6px) 5px 17px/34px
-      34px,
+    radial-gradient(rgba(0, 0, 0, 0.12) 1px, transparent 1.6px) 5px 17px/34px 34px,
     radial-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1.6px) 7px 3px /40px 40px,
     transparent;
 }
@@ -311,6 +305,32 @@ main {
       border-left: 1px solid #343434;
       position: relative;
 
+      .yellow {
+        height: 20px;
+        width: 20px;
+        transform: translateX(80px);
+
+        background-color: #ffd526;
+        border-radius: 50%;
+      }
+
+      .top-half {
+        height: 30px;
+        width: 60px;
+        transform: translateX(50px);
+
+        border-radius: 150px 150px 0 0;
+        background-color: #63ec9a;
+      }
+
+      .down-half {
+        height: 30px;
+        width: 60px;
+        transform: translateX(60px);
+        border-radius: 0 0 150px 150px;
+        background-color: #63ec9a;
+      }
+
       h3 {
         font-family: "Nunito Sans", sans-serif;
         font-weight: 600;
@@ -336,16 +356,55 @@ main {
         border-radius: 50%;
       }
 
+
       .square {
         width: 48px;
         height: 48px;
         background-color: #fc72ff;
       }
 
-      img {
-        position: absolute;
+      
+
+      .triangle {
+          position: absolute;
         bottom: 50px;
         left: 50px;
+      }
+
+      .triangle1 {
+        width: 0;
+        height: 0;
+        transform: translateX(60px) rotate(90deg);
+        border: 30px solid transparent;
+        border-top: 0;
+        border-bottom: 51px solid #60fdf4;
+      }
+
+      .triangle2 {
+        width: 0;
+        height: 0;
+        transform: translateX(79px) rotate(16deg);
+        border: 30px solid transparent;
+        border-top: 0;
+        border-bottom: 51px solid #60fdf4;
+      }
+
+      .triangle3 {
+        width: 0;
+        height: 0;
+        border: 30px solid transparent;
+        transform: translateY(-10px) rotate(55deg);
+        border-top: 0;
+        border-bottom: 51px solid #60fdf4;
+      }
+
+      .triangle4 {
+        width: 0;
+        height: 0;
+        transform: translateY(-39px) translateX(120px) rotate(20deg);
+        border: 30px solid transparent;
+        border-top: 0;
+        border-bottom: 51px solid #60fdf4;
       }
     }
   }
@@ -684,6 +743,7 @@ main {
 .start-a-project .container .right {
   padding: 50px;
 }
+
 .start-a-project .container .right form {
   padding-bottom: 50px;
   display: flex;
@@ -693,6 +753,7 @@ main {
   gap: 20px;
   border-bottom: 1px solid #343434;
 }
+
 .start-a-project .container .right form input {
   background-color: transparent;
   border-color: white;
@@ -700,22 +761,26 @@ main {
   width: 325px;
   height: 40px;
 }
+
 .start-a-project .container .right form .what {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 100px;
+
   button {
     width: 120px;
     height: 50px;
   }
 }
+
 .start-a-project .container .right .buttom {
   padding-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .start-a-project .container .right .img {
   display: flex;
   align-items: center;
